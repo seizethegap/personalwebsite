@@ -63,7 +63,24 @@ const useStyles = makeStyles((theme) => ({
       [theme.breakpoints.up(2560)]: {
         maxWidth: '18.7vw',
       }
-    }
+    },
+    '& > video': {
+      maxWidth: '30vw',
+      height: 'auto',
+      borderRadius: '0.5em',
+      [theme.breakpoints.down('sm')]: {
+        maxWidth: '100%',
+        position: 'relative',
+        bottom: 100,
+        zIndex: 0
+      },
+      [theme.breakpoints.only('md')]: {
+        maxWidth: '90%'
+      },
+      [theme.breakpoints.up(2560)]: {
+        maxWidth: '18.7vw',
+      }
+    },
   },
 }));
 
@@ -137,10 +154,9 @@ const FeaturedProjects = ({ className, ...rest }) => {
             xl={6}>
               <Box>
                 <div className={classes.image}>
-                  <img
-                    alt="Presentation"
-                    src="/static/images/exatronpic.jpg"
-                  />
+                  <video autoplay="autoplay" muted playsInline>
+                    <source src="/static/videos/MachineHandler.mp4" type="video/mp4" />
+                  </video>
                 </div>
               </Box>
             </Grid>
