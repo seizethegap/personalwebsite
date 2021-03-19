@@ -19,11 +19,12 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.default,
     paddingTop: 128,
     paddingBottom: 128,
-    marginLeft: '21vw',
-    marginRight: '21vw',
+    display: 'flex',
+    paddingLeft: '21em',
+    paddingRight: '21em',
     [theme.breakpoints.down('sm')]: {
-      marginLeft: '2em',
-      marginRight: '2em'
+      paddingLeft: '2em',
+      paddingRight: '2em'
     }
   },
   browseButton: {

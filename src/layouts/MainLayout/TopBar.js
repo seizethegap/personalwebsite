@@ -21,7 +21,7 @@ import HideOnScroll from 'src/components/HideOnScroll';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: theme.palette.background.default,
+    backgroundColor: 'transparent',
   },
   toolbar: {
     height: 64
@@ -29,31 +29,41 @@ const useStyles = makeStyles((theme) => ({
   logo: {
     marginRight: theme.spacing(2)
   },
-  link: {
-    fontWeight: theme.typography.fontWeightMedium,
-    '& + &': {
-      marginLeft: theme.spacing(2)
-    }
-  },
   divider: {
     width: 1,
     height: 32,
     marginLeft: theme.spacing(2),
     marginRight: theme.spacing(2)
-  }
+  },
+  link: {
+    textDecoration: 'none',
+	  background: 'linear-gradient(currentColor, currentColor) bottom / 0 .1em no-repeat',
+    transition: '0.5s background-size',
+    fontWeight: theme.typography.fontWeightMedium,
+    '& + &': {
+      marginLeft: theme.spacing(2)
+    },
+    
+    "&:hover": {
+      backgroundSize: '100% .1em',
+      color: '#8a85ff'
+    }
+  },
 }));
 
 const TopBar = ({ className, ...rest }) => {
   const classes = useStyles();
 
   return (
+    <div>
+    <HideOnScroll>
     <AppBar
+      color="transparent"
       className={clsx(classes.root, className)}
-      color="default"
       position="fixed"
       {...rest}
     >
-      <Toolbar className={classes.toolbar}>
+      <Toolbar component="nav" className={classes.toolbar}>
         <RouterLink to="/">
           <Logo className={classes.logo} />
         </RouterLink>
@@ -103,6 +113,8 @@ const TopBar = ({ className, ...rest }) => {
         </Button>
       </Toolbar>
     </AppBar>
+    </HideOnScroll>
+    </div>
   );
 };
 
