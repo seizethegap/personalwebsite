@@ -122,7 +122,7 @@ export default function ExperienceMenu() {
     <div className={classes.root}>
         <Grid container spacing={6} direction="row">
             <Grid item
-            xl={3}>
+            lg={3} xl={3}>
                 <MenuList>
                     <Box className={classes.button}>
                         <MenuItem onClick={() => { setMessage(() => {
@@ -279,7 +279,7 @@ export default function ExperienceMenu() {
             </Grid>
 
             <Grid item
-            xl={8}>
+            lg={8} xl={8}>
                 <Box mt='0.8em'>
                     <Typography variant="body2" color="textSecondary">
                         {message}

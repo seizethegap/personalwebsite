@@ -70,7 +70,7 @@ const Hero = ({ className, ...rest }) => {
     >
       <Container maxWidth="lg" style={{ padding: '2em' }}>
           <Box mb='1.25em'>
-          <ScrollAnimation animateIn="fadeInUp" duration={1} delay={400} >
+          <ScrollAnimation animateIn="fadeInUp" duration={1} delay={400} animateOnce>
               <Typography component="p"
               variant="overline"
               color="secondary">
@@ -80,7 +80,7 @@ const Hero = ({ className, ...rest }) => {
           </Box>
 
         <Box mb='1em'>
-          <ScrollAnimation animateIn="fadeInUp" duration={1} delay={300}>
+          <ScrollAnimation animateIn="fadeInUp" duration={1} delay={300} animateOnce>
             <Typography variant="h1" style={{ color: '#FFFFFF'}}>
               Andrew Nguyen.
             </Typography>
@@ -88,15 +88,15 @@ const Hero = ({ className, ...rest }) => {
         </Box>
 
         <Box mb='1.5em'>
-          <ScrollAnimation animateIn="fadeInUp" duration={1} delay={200} >
+          <ScrollAnimation animateIn="fadeInUp" duration={1} delay={200} animateOnce>
             <Typography variant="h1" color="textSecondary">
               I build apps for Enterprise.
             </Typography>
             </ScrollAnimation>
         </Box>
 
-        <Box mb='3em' pr={{ xl: '34em' }}>
-          <ScrollAnimation animateIn="fadeInUp" duration={1} delay={100} >
+        <Box mb='3em' pr={{ lg: '34em', xl: '34em' }}>
+          <ScrollAnimation animateIn="fadeInUp" duration={1} delay={100} animateOnce>
             <Typography variant="body2" color="textSecondary">
               I'm a software engineer based in San Jose, CA with a passion
               for Object-Oriented Programming and .NET Framework development. I am 

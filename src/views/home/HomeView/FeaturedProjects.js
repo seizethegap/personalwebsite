@@ -20,8 +20,8 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: 128,
     paddingBottom: 128,
     display: 'flex',
-    paddingLeft: '21em',
-    paddingRight: '21em',
+    paddingLeft: '25em',
+    paddingRight: '25em',
     [theme.breakpoints.down('sm')]: {
       paddingLeft: '2em',
       paddingRight: '2em'
@@ -111,7 +111,7 @@ const FeaturedProjects = ({ className, ...rest }) => {
         <Fade bottom duration={1500} delay={200}>
           <Grid container direction="row-reverse">
             <Grid item className={classes.vertCenter}
-            xl={6} align="right">
+            lg={6} xl={6} align="right">
               <Box>
                 <Box>
                   <Typography component="p"
@@ -152,7 +152,7 @@ const FeaturedProjects = ({ className, ...rest }) => {
             </Grid>
 
             <Grid item
-            xl={6}>
+            lg={6} xl={6}>
               <Box>
                 <div className={classes.image}>
                   <video autoplay="autoplay" muted playsInline>
@@ -167,7 +167,7 @@ const FeaturedProjects = ({ className, ...rest }) => {
         <Fade bottom duration={1500} delay={200}>
           <Grid container direction="row" style={{ paddingTop: '5em' }}>
             <Grid item className={classes.vertCenter}
-              xl={6} align="left">
+              lg={6} xl={6} align="left">
                 <Box>
                   <Box>
                     <Typography component="p"
@@ -208,7 +208,7 @@ const FeaturedProjects = ({ className, ...rest }) => {
             </Grid>
 
             <Grid item style={{ marginLeft: '-5vmin' }}
-            xl={6} align="right">
+            lg={6} xl={6} align="right">
               <Box>
                 <div className={classes.image}>
                   <img
@@ -224,7 +224,7 @@ const FeaturedProjects = ({ className, ...rest }) => {
         <Fade bottom duration={1500} delay={200}>
           <Grid container direction="row-reverse" style={{ paddingTop: '5em' }}>
             <Grid item className={classes.vertCenter}
-            xl={6} align="right">
+            lg={6} xl={6} align="right">
               <Box>
                 <Box>
                   <Typography component="p"
@@ -264,7 +264,7 @@ const FeaturedProjects = ({ className, ...rest }) => {
             </Grid>
 
             <Grid item
-            xl={6}>
+            lg={6} xl={6}>
               <Box>
                 <div className={classes.image}>
                   <img
