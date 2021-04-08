@@ -51,7 +51,7 @@ export default function ExperienceMenu() {
     return <div>
         <Typography component="p"
         variant="overline" color="textSecondary" className={classes.hoverText} style={{ fontSize: '0.8rem' }}>
-            Exatron, Inc.
+            TeraRecon, Inc.
         </Typography>
     </div>
   });
@@ -60,10 +60,19 @@ export default function ExperienceMenu() {
     return <div>
         <Typography component="p"
         variant="overline" color="textSecondary" className={classes.hoverText} style={{ fontSize: '0.8rem' }}>
-            SMUD
+            Exatron, Inc.
         </Typography>
     </div>
   });
+
+  const [job3, setJob3] = React.useState(() => {
+      return <div>
+          <Typography component="p"
+        variant="overline" color="textSecondary" className={classes.hoverText} style={{ fontSize: '0.8rem' }}>
+            SMUD
+        </Typography>
+      </div>
+  })
 
   const [message, setMessage] = React.useState(() => {
     return <div>
@@ -75,7 +84,7 @@ export default function ExperienceMenu() {
 
         <Box>
             <Typography variant="overline" style={{ fontSize: '0.8rem' }}>
-                September 2020 - Present
+                September 2020 - April 2021
             </Typography>
         </Box>
         
@@ -122,7 +131,7 @@ export default function ExperienceMenu() {
     <div className={classes.root}>
         <Grid container spacing={6} direction="row">
             <Grid item
-            lg={3} xl={3}>
+            md={3} lg={3} xl={3}>
                 <MenuList>
                     <Box className={classes.button}>
                         <MenuItem onClick={() => { setMessage(() => {
@@ -137,7 +146,7 @@ export default function ExperienceMenu() {
 
                                         <Box>
                                             <Typography variant="overline" style={{ fontSize: '0.8rem' }}>
-                                                September 2020 - Present
+                                                September 2020 - April 2021
                                             </Typography>
                                         </Box>
                                         
@@ -279,7 +288,7 @@ export default function ExperienceMenu() {
             </Grid>
 
             <Grid item
-            lg={8} xl={8}>
+            md={8} lg={8} xl={8}>
                 <Box mt='0.8em'>
                     <Typography variant="body2" color="textSecondary">
                         {message}

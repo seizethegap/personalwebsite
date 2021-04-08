@@ -19,12 +19,15 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.default,
     paddingTop: 128,
     paddingBottom: 128,
-    display: 'flex',
     paddingLeft: '25em',
     paddingRight: '25em',
     [theme.breakpoints.down('sm')]: {
       paddingLeft: '2em',
       paddingRight: '2em'
+    },
+    [theme.breakpoints.only('md')]: {
+      paddingLeft: '8em',
+      paddingRight: '8em'
     }
   },
   browseButton: {
@@ -59,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
         zIndex: 0
       },
       [theme.breakpoints.only('md')]: {
-        maxWidth: '90%'
+        maxWidth: '40vw'
       },
       [theme.breakpoints.up(2560)]: {
         maxWidth: '18.7vw',
@@ -76,7 +79,7 @@ const useStyles = makeStyles((theme) => ({
         zIndex: 0
       },
       [theme.breakpoints.only('md')]: {
-        maxWidth: '90%'
+        maxWidth: '45vw'
       },
       [theme.breakpoints.up(2560)]: {
         maxWidth: '18.7vw',
@@ -111,7 +114,7 @@ const FeaturedProjects = ({ className, ...rest }) => {
         <Fade bottom duration={1500} delay={200}>
           <Grid container direction="row-reverse">
             <Grid item className={classes.vertCenter}
-            lg={6} xl={6} align="right">
+            md={6} lg={6} xl={6} align="right">
               <Box>
                 <Box>
                   <Typography component="p"
@@ -152,7 +155,7 @@ const FeaturedProjects = ({ className, ...rest }) => {
             </Grid>
 
             <Grid item
-            lg={6} xl={6}>
+            md={6} lg={6} xl={6}>
               <Box>
                 <div className={classes.image}>
                   <video autoplay="autoplay" muted playsInline>
@@ -167,7 +170,7 @@ const FeaturedProjects = ({ className, ...rest }) => {
         <Fade bottom duration={1500} delay={200}>
           <Grid container direction="row" style={{ paddingTop: '5em' }}>
             <Grid item className={classes.vertCenter}
-              lg={6} xl={6} align="left">
+              md={6} lg={6} xl={6} align="left">
                 <Box>
                   <Box>
                     <Typography component="p"
@@ -208,7 +211,7 @@ const FeaturedProjects = ({ className, ...rest }) => {
             </Grid>
 
             <Grid item style={{ marginLeft: '-5vmin' }}
-            lg={6} xl={6} align="right">
+            md={6} lg={6} xl={6} align="right">
               <Box>
                 <div className={classes.image}>
                   <img
@@ -224,7 +227,7 @@ const FeaturedProjects = ({ className, ...rest }) => {
         <Fade bottom duration={1500} delay={200}>
           <Grid container direction="row-reverse" style={{ paddingTop: '5em' }}>
             <Grid item className={classes.vertCenter}
-            lg={6} xl={6} align="right">
+            md={6} lg={6} xl={6} align="right">
               <Box>
                 <Box>
                   <Typography component="p"
@@ -264,7 +267,7 @@ const FeaturedProjects = ({ className, ...rest }) => {
             </Grid>
 
             <Grid item
-            lg={6} xl={6}>
+            md={6} lg={6} xl={6}>
               <Box>
                 <div className={classes.image}>
                   <img

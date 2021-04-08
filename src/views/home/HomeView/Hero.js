@@ -25,6 +25,9 @@ const useStyles = makeStyles((theme) => ({
     width: 'auto',
     [theme.breakpoints.up(3840)]: {
       paddingTop: '30vh'
+    },
+    [theme.breakpoints.only('md')]: {
+      paddingLeft: '8vw'
     }
   },
   technologyIcon: {
@@ -95,7 +98,7 @@ const Hero = ({ className, ...rest }) => {
             </ScrollAnimation>
         </Box>
 
-        <Box mb='3em' pr={{ lg: '34em', xl: '34em' }}>
+        <Box mb='3em' pr={{ md: '24em', lg: '34em', xl: '34em' }}>
           <ScrollAnimation animateIn="fadeInUp" duration={1} delay={100} animateOnce>
             <Typography variant="body2" color="textSecondary">
               I'm a software engineer based in San Jose, CA with a passion

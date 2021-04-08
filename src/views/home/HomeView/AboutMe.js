@@ -82,7 +82,7 @@ const AboutMe = ({ className, ...rest }) => {
         <Fade bottom duration={1500} delay={200}>
         <Grid container direction="row" spacing={3}>
           <Grid item
-          lg={6} xl={6}>
+          md={6} lg={6} xl={6}>
             <Box flexDirection="column">
               <Box mb='1em' align="left">
                 <Typography variant="body2" color="textSecondary">
@@ -117,7 +117,7 @@ const AboutMe = ({ className, ...rest }) => {
               <Box p='1em'>
                 <Grid container direction="row">
                   <Grid items
-                  xs={6} lg={6} xl={6}>
+                  xs={6} md={6} lg={6} xl={6}>
                     <Box>
                       <List>
                         <ListItem className={classes.listitem}>
@@ -151,7 +151,7 @@ const AboutMe = ({ className, ...rest }) => {
                   </Grid>
 
                   <Grid items
-                  xs={6} lg={6} xl={6}>
+                  xs={6} md={6}  lg={6} xl={6}>
                     <Box>
                       <List>
                         <ListItem className={classes.listitem}>
@@ -189,7 +189,7 @@ const AboutMe = ({ className, ...rest }) => {
           </Grid>
 
           <Grid item
-          lg={6} xl={6}>
+          md={6} lg={6} xl={6}>
             <Box>
               <div className={classes.image}>
                 <img
